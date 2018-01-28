@@ -12,9 +12,12 @@
 		A1AD8675201741D200C622BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AD8673201741D200C622BA /* Main.storyboard */; };
 		A1AD8677201741D200C622BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1AD8676201741D200C622BA /* Assets.xcassets */; };
 		A1AD867A201741D200C622BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AD8678201741D200C622BA /* LaunchScreen.storyboard */; };
+		A554DDC5DF8C82F33C96C05F /* Pods_ABSNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED406D97BC706ED32EC15945 /* Pods_ABSNative.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EDCE6331CD19DD9B4D5F2BC /* Pods-ABSNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABSNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABSNative/Pods-ABSNative.debug.xcconfig"; sourceTree = "<group>"; };
+		31C8AEBF913ED4DFC6B80F18 /* Pods-ABSNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABSNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABSNative/Pods-ABSNative.release.xcconfig"; sourceTree = "<group>"; };
 		A1AD866C201741D200C622BA /* ABSNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABSNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AD866F201741D200C622BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AD8671201741D200C622BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A1AD8676201741D200C622BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1AD8679201741D200C622BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1AD867B201741D200C622BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED406D97BC706ED32EC15945 /* Pods_ABSNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABSNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A554DDC5DF8C82F33C96C05F /* Pods_ABSNative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D96AB4259339F3D0D5F2BA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EDCE6331CD19DD9B4D5F2BC /* Pods-ABSNative.debug.xcconfig */,
+				31C8AEBF913ED4DFC6B80F18 /* Pods-ABSNative.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7054507076E48764B950619D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED406D97BC706ED32EC15945 /* Pods_ABSNative.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1AD8663201741D200C622BA = {
 			isa = PBXGroup;
 			children = (
 				A1AD866E201741D200C622BA /* ABSNative */,
 				A1AD866D201741D200C622BA /* Products */,
+				3D96AB4259339F3D0D5F2BA4 /* Pods */,
+				7054507076E48764B950619D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1AD867E201741D200C622BA /* Build configuration list for PBXNativeTarget "ABSNative" */;
 			buildPhases = (
+				5E31BDF51D3CA210CE8F3C0F /* [CP] Check Pods Manifest.lock */,
 				A1AD8668201741D200C622BA /* Sources */,
 				A1AD8669201741D200C622BA /* Frameworks */,
 				A1AD866A201741D200C622BA /* Resources */,
+				58861FB597B6A26BA5519AB6 /* [CP] Embed Pods Frameworks */,
+				4CEC4F81DD4467E817ABC6A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CEC4F81DD4467E817ABC6A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABSNative/Pods-ABSNative-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58861FB597B6A26BA5519AB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ABSNative/Pods-ABSNative-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/GLog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ABSNative/Pods-ABSNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E31BDF51D3CA210CE8F3C0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ABSNative-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1AD8668201741D200C622BA /* Sources */ = {
@@ -272,6 +361,7 @@
 		};
 		A1AD867F201741D200C622BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EDCE6331CD19DD9B4D5F2BC /* Pods-ABSNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +376,7 @@
 		};
 		A1AD8680201741D200C622BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31C8AEBF913ED4DFC6B80F18 /* Pods-ABSNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
